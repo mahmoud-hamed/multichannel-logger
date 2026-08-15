@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Discord;
+namespace MahmoudHamed\MultichannelLogger\Discord;
 
+use MahmoudHamed\MultichannelLogger\Exceptions\MissingWebhookException;
+use MahmoudHamed\MultichannelLogger\Logging\WebhookLoggerFactory;
+use MahmoudHamed\MultichannelLogger\Logging\WebhookLogHandler;
 use Monolog\Logger;
-use OpenCode\MultichannelLogger\Exceptions\MissingWebhookException;
-use OpenCode\MultichannelLogger\Logging\WebhookLoggerFactory;
-use OpenCode\MultichannelLogger\Logging\WebhookLogHandler;
 
 final class CreateDiscordLogger extends WebhookLoggerFactory
 {

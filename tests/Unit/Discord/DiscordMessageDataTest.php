@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use OpenCode\MultichannelLogger\Discord\DiscordEmbedData;
-use OpenCode\MultichannelLogger\Discord\DiscordMessageData;
+use MahmoudHamed\MultichannelLogger\Discord\DiscordEmbedData;
+use MahmoudHamed\MultichannelLogger\Discord\DiscordMessageData;
 
 it('builds a discord payload from a message', function () {
     $message = new DiscordMessageData(

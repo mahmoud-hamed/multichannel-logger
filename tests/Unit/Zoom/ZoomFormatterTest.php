@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
+use MahmoudHamed\MultichannelLogger\Zoom\ZoomFormatter;
+use MahmoudHamed\MultichannelLogger\Zoom\ZoomMessageData;
 use Monolog\Level;
 use Monolog\LogRecord;
-use OpenCode\MultichannelLogger\Zoom\ZoomFormatter;
-use OpenCode\MultichannelLogger\Zoom\ZoomMessageData;
 
 it('formats a log record into a zoom message', function () {
     $record = new LogRecord(

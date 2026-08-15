@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\Log;
-use OpenCode\MultichannelLogger\Exceptions\MissingConfigurationException;
-use OpenCode\MultichannelLogger\Zoom\CreateZoomLogger;
-use OpenCode\MultichannelLogger\Zoom\SendMessageRequest;
-use OpenCode\MultichannelLogger\Zoom\ZoomConnector;
+use MahmoudHamed\MultichannelLogger\Exceptions\MissingConfigurationException;
+use MahmoudHamed\MultichannelLogger\Zoom\CreateZoomLogger;
+use MahmoudHamed\MultichannelLogger\Zoom\SendMessageRequest;
+use MahmoudHamed\MultichannelLogger\Zoom\ZoomConnector;
 use Saloon\Http\Faking\MockResponse;
 use Saloon\Laravel\Facades\Saloon;
 

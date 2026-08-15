@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Support;
+namespace MahmoudHamed\MultichannelLogger\Support;
 
-use OpenCode\MultichannelLogger\Contracts\WebhookMessage;
-use OpenCode\MultichannelLogger\Contracts\WebhookMessenger as WebhookMessengerContract;
-use OpenCode\MultichannelLogger\Exceptions\FailedRequestException;
+use MahmoudHamed\MultichannelLogger\Contracts\WebhookMessage;
+use MahmoudHamed\MultichannelLogger\Contracts\WebhookMessenger as WebhookMessengerContract;
+use MahmoudHamed\MultichannelLogger\Exceptions\FailedRequestException;
 use Saloon\Exceptions\Request\FatalRequestException;
 use Saloon\Exceptions\Request\RequestException;
 

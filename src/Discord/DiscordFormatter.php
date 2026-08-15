@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Discord;
+namespace MahmoudHamed\MultichannelLogger\Discord;
 
 use Illuminate\Support\Arr;
+use MahmoudHamed\MultichannelLogger\Contracts\LogMessageFormatter;
 use Monolog\Level;
 use Monolog\LogRecord;
-use OpenCode\MultichannelLogger\Contracts\LogMessageFormatter;
 use Throwable;
 
 final class DiscordFormatter implements LogMessageFormatter

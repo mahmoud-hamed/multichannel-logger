@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
+use MahmoudHamed\MultichannelLogger\Discord\DiscordFormatter;
+use MahmoudHamed\MultichannelLogger\Discord\DiscordMessageData;
 use Monolog\Level;
 use Monolog\LogRecord;
-use OpenCode\MultichannelLogger\Discord\DiscordFormatter;
-use OpenCode\MultichannelLogger\Discord\DiscordMessageData;
 
 it('formats a log record into a discord message with an embed', function () {
     $record = new LogRecord(

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Zoom;
+namespace MahmoudHamed\MultichannelLogger\Zoom;
 
-use OpenCode\MultichannelLogger\Support\WebhookRequest;
+use MahmoudHamed\MultichannelLogger\Support\WebhookRequest;
 
 final class SendMessageRequest extends WebhookRequest
 {

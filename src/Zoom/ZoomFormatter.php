@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Zoom;
+namespace MahmoudHamed\MultichannelLogger\Zoom;
 
+use MahmoudHamed\MultichannelLogger\Contracts\LogMessageFormatter;
 use Monolog\LogRecord;
-use OpenCode\MultichannelLogger\Contracts\LogMessageFormatter;
 
 final class ZoomFormatter implements LogMessageFormatter
 {

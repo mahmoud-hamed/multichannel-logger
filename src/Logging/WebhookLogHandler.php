@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Logging;
+namespace MahmoudHamed\MultichannelLogger\Logging;
 
+use MahmoudHamed\MultichannelLogger\Contracts\LogMessageFormatter;
+use MahmoudHamed\MultichannelLogger\Contracts\WebhookMessenger;
+use MahmoudHamed\MultichannelLogger\Exceptions\MultichannelLoggerException;
 use Monolog\Handler\AbstractProcessingHandler;
 use Monolog\Level;
 use Monolog\LogRecord;
-use OpenCode\MultichannelLogger\Contracts\LogMessageFormatter;
-use OpenCode\MultichannelLogger\Contracts\WebhookMessenger;
-use OpenCode\MultichannelLogger\Exceptions\MultichannelLoggerException;
 
 final class WebhookLogHandler extends AbstractProcessingHandler
 {

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Facades;
+namespace MahmoudHamed\MultichannelLogger\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use OpenCode\MultichannelLogger\Discord\DiscordMessenger;
-use OpenCode\MultichannelLogger\MultichannelLogger as MultichannelLoggerService;
-use OpenCode\MultichannelLogger\Slack\SlackMessenger;
-use OpenCode\MultichannelLogger\Zoom\ZoomMessenger;
+use MahmoudHamed\MultichannelLogger\Discord\DiscordMessenger;
+use MahmoudHamed\MultichannelLogger\MultichannelLogger as MultichannelLoggerService;
+use MahmoudHamed\MultichannelLogger\Slack\SlackMessenger;
+use MahmoudHamed\MultichannelLogger\Zoom\ZoomMessenger;
 
 /**
  * @method static SlackMessenger slack(?string $webhookUrl = null)

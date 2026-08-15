@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use OpenCode\MultichannelLogger\Zoom\ZoomMessageData;
+use MahmoudHamed\MultichannelLogger\Zoom\ZoomMessageData;
 
 it('builds a zoom chat payload', function () {
     $message = new ZoomMessageData(

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Support;
+namespace MahmoudHamed\MultichannelLogger\Support;
 
 use Illuminate\Notifications\Notification;
 use InvalidArgumentException;
-use OpenCode\MultichannelLogger\Contracts\WebhookMessage;
-use OpenCode\MultichannelLogger\Contracts\WebhookMessenger;
-use OpenCode\MultichannelLogger\Exceptions\MissingWebhookException;
+use MahmoudHamed\MultichannelLogger\Contracts\WebhookMessage;
+use MahmoudHamed\MultichannelLogger\Contracts\WebhookMessenger;
+use MahmoudHamed\MultichannelLogger\Exceptions\MissingWebhookException;
 
 abstract class WebhookChannel
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Support;
+namespace MahmoudHamed\MultichannelLogger\Support;
 
 use Saloon\Http\Connector;
 use Saloon\Traits\Plugins\HasTimeout;

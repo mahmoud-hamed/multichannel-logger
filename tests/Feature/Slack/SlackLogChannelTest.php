@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\Log;
-use OpenCode\MultichannelLogger\Exceptions\MissingWebhookException;
-use OpenCode\MultichannelLogger\Slack\CreateSlackLogger;
-use OpenCode\MultichannelLogger\Slack\SendMessageRequest;
-use OpenCode\MultichannelLogger\Slack\SlackConnector;
+use MahmoudHamed\MultichannelLogger\Exceptions\MissingWebhookException;
+use MahmoudHamed\MultichannelLogger\Slack\CreateSlackLogger;
+use MahmoudHamed\MultichannelLogger\Slack\SendMessageRequest;
+use MahmoudHamed\MultichannelLogger\Slack\SlackConnector;
 use Saloon\Http\Faking\MockResponse;
 use Saloon\Laravel\Facades\Saloon;
 

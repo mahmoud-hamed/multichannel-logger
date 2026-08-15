@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
+use MahmoudHamed\MultichannelLogger\Slack\SlackFormatter;
+use MahmoudHamed\MultichannelLogger\Slack\SlackMessageData;
 use Monolog\Level;
 use Monolog\LogRecord;
-use OpenCode\MultichannelLogger\Slack\SlackFormatter;
-use OpenCode\MultichannelLogger\Slack\SlackMessageData;
 
 function logRecord(string $message = 'Something broke', Level $level = Level::Error, array $context = []): LogRecord
 {

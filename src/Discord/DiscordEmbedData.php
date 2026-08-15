@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Discord;
+namespace MahmoudHamed\MultichannelLogger\Discord;
 
 use Carbon\CarbonImmutable;
 use Spatie\LaravelData\Data;

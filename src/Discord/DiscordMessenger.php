@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Discord;
+namespace MahmoudHamed\MultichannelLogger\Discord;
 
 use InvalidArgumentException;
-use OpenCode\MultichannelLogger\Contracts\WebhookMessage;
-use OpenCode\MultichannelLogger\Support\WebhookMessenger;
-use OpenCode\MultichannelLogger\Support\WebhookRequest;
+use MahmoudHamed\MultichannelLogger\Contracts\WebhookMessage;
+use MahmoudHamed\MultichannelLogger\Support\WebhookMessenger;
+use MahmoudHamed\MultichannelLogger\Support\WebhookRequest;
 
 final class DiscordMessenger extends WebhookMessenger
 {

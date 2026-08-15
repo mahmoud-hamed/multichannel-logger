@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Slack;
+namespace MahmoudHamed\MultichannelLogger\Slack;
 
 use Illuminate\Support\Arr;
+use MahmoudHamed\MultichannelLogger\Contracts\LogMessageFormatter;
 use Monolog\Level;
 use Monolog\LogRecord;
-use OpenCode\MultichannelLogger\Contracts\LogMessageFormatter;
 use Throwable;
 
 final class SlackFormatter implements LogMessageFormatter

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Tests;
+namespace MahmoudHamed\MultichannelLogger\Tests;
 
-use OpenCode\MultichannelLogger\MultichannelLoggerServiceProvider;
+use MahmoudHamed\MultichannelLogger\MultichannelLoggerServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Saloon\Laravel\SaloonServiceProvider;
 use Spatie\LaravelData\LaravelDataServiceProvider;

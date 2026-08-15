@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Slack;
+namespace MahmoudHamed\MultichannelLogger\Slack;
 
 use Spatie\LaravelData\Data;
 

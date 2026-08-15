@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-use OpenCode\MultichannelLogger\Exceptions\InvalidWebhookException;
-use OpenCode\MultichannelLogger\Exceptions\MissingWebhookException;
-use OpenCode\MultichannelLogger\Support\WebhookUrl;
+use MahmoudHamed\MultichannelLogger\Exceptions\InvalidWebhookException;
+use MahmoudHamed\MultichannelLogger\Exceptions\MissingWebhookException;
+use MahmoudHamed\MultichannelLogger\Support\WebhookUrl;
 
 it('parses a webhook url into base and endpoint parts', function () {
     $url = WebhookUrl::from('https://hooks.slack.com/services/T00000/B00000/XXXXX');

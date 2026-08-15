@@ -36,21 +36,21 @@
     },
     "autoload": {
         "psr-4": {
-            "OpenCode\\MultichannelLogger\\": "src/"
+            "MahmoudHamed\\MultichannelLogger\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "OpenCode\\MultichannelLogger\\Tests\\": "tests/"
+            "MahmoudHamed\\MultichannelLogger\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "OpenCode\\MultichannelLogger\\MultichannelLoggerServiceProvider"
+                "MahmoudHamed\\MultichannelLogger\\MultichannelLoggerServiceProvider"
             ],
             "aliases": {
-                "MultichannelLogger": "OpenCode\\MultichannelLogger\\Facades\\MultichannelLogger"
+                "MultichannelLogger": "MahmoudHamed\\MultichannelLogger\\Facades\\MultichannelLogger"
             }
         }
     },

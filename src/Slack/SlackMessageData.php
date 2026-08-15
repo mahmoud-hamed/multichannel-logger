@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Slack;
+namespace MahmoudHamed\MultichannelLogger\Slack;
 
 use Illuminate\Support\Collection;
-use OpenCode\MultichannelLogger\Contracts\WebhookMessage;
+use MahmoudHamed\MultichannelLogger\Contracts\WebhookMessage;
 use Spatie\LaravelData\Data;
 
 final class SlackMessageData extends Data implements WebhookMessage

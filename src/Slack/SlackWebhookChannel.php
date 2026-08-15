@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Slack;
+namespace MahmoudHamed\MultichannelLogger\Slack;
 
-use OpenCode\MultichannelLogger\Contracts\WebhookMessenger;
-use OpenCode\MultichannelLogger\MultichannelLogger;
-use OpenCode\MultichannelLogger\Support\WebhookChannel;
+use MahmoudHamed\MultichannelLogger\Contracts\WebhookMessenger;
+use MahmoudHamed\MultichannelLogger\MultichannelLogger;
+use MahmoudHamed\MultichannelLogger\Support\WebhookChannel;
 
 final class SlackWebhookChannel extends WebhookChannel
 {

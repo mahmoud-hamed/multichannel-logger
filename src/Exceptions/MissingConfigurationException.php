@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Exceptions;
+namespace MahmoudHamed\MultichannelLogger\Exceptions;
 
 class MissingConfigurationException extends MultichannelLoggerException
 {

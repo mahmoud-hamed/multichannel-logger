@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-use OpenCode\MultichannelLogger\Exceptions\FailedRequestException;
-use OpenCode\MultichannelLogger\Zoom\SendMessageRequest;
-use OpenCode\MultichannelLogger\Zoom\ZoomConnector;
-use OpenCode\MultichannelLogger\Zoom\ZoomMessageData;
-use OpenCode\MultichannelLogger\Zoom\ZoomMessenger;
+use MahmoudHamed\MultichannelLogger\Exceptions\FailedRequestException;
+use MahmoudHamed\MultichannelLogger\Zoom\SendMessageRequest;
+use MahmoudHamed\MultichannelLogger\Zoom\ZoomConnector;
+use MahmoudHamed\MultichannelLogger\Zoom\ZoomMessageData;
+use MahmoudHamed\MultichannelLogger\Zoom\ZoomMessenger;
 use Saloon\Http\Faking\MockResponse;
 use Saloon\Laravel\Facades\Saloon;
 

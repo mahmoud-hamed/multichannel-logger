@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-use OpenCode\MultichannelLogger\Discord\DiscordMessageData;
-use OpenCode\MultichannelLogger\Exceptions\FailedRequestException;
-use OpenCode\MultichannelLogger\Exceptions\MissingWebhookException;
-use OpenCode\MultichannelLogger\Slack\SendMessageRequest;
-use OpenCode\MultichannelLogger\Slack\SlackConnector;
-use OpenCode\MultichannelLogger\Slack\SlackMessageData;
-use OpenCode\MultichannelLogger\Slack\SlackMessenger;
+use MahmoudHamed\MultichannelLogger\Discord\DiscordMessageData;
+use MahmoudHamed\MultichannelLogger\Exceptions\FailedRequestException;
+use MahmoudHamed\MultichannelLogger\Exceptions\MissingWebhookException;
+use MahmoudHamed\MultichannelLogger\Slack\SendMessageRequest;
+use MahmoudHamed\MultichannelLogger\Slack\SlackConnector;
+use MahmoudHamed\MultichannelLogger\Slack\SlackMessageData;
+use MahmoudHamed\MultichannelLogger\Slack\SlackMessenger;
 use Saloon\Http\Faking\MockResponse;
 use Saloon\Laravel\Facades\Saloon;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger;
+namespace MahmoudHamed\MultichannelLogger;
 
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Foundation\Application;

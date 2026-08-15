@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Support;
+namespace MahmoudHamed\MultichannelLogger\Support;
 
-use OpenCode\MultichannelLogger\Exceptions\InvalidWebhookException;
-use OpenCode\MultichannelLogger\Exceptions\MissingWebhookException;
+use MahmoudHamed\MultichannelLogger\Exceptions\InvalidWebhookException;
+use MahmoudHamed\MultichannelLogger\Exceptions\MissingWebhookException;
 
 final class WebhookUrl
 {

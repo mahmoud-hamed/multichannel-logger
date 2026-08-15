@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use OpenCode\MultichannelLogger\Slack\SlackAttachmentData;
-use OpenCode\MultichannelLogger\Slack\SlackMessageData;
+use MahmoudHamed\MultichannelLogger\Slack\SlackAttachmentData;
+use MahmoudHamed\MultichannelLogger\Slack\SlackMessageData;
 
 it('builds a slack payload from a message', function () {
     $message = SlackMessageData::from([

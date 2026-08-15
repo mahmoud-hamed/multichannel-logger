@@ -3,9 +3,9 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\Log;
-use OpenCode\MultichannelLogger\Discord\CreateDiscordLogger;
-use OpenCode\MultichannelLogger\Discord\DiscordConnector;
-use OpenCode\MultichannelLogger\Discord\SendMessageRequest;
+use MahmoudHamed\MultichannelLogger\Discord\CreateDiscordLogger;
+use MahmoudHamed\MultichannelLogger\Discord\DiscordConnector;
+use MahmoudHamed\MultichannelLogger\Discord\SendMessageRequest;
 use Saloon\Http\Faking\MockResponse;
 use Saloon\Laravel\Facades\Saloon;
 

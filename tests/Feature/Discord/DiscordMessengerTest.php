@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-use OpenCode\MultichannelLogger\Discord\DiscordConnector;
-use OpenCode\MultichannelLogger\Discord\DiscordMessageData;
-use OpenCode\MultichannelLogger\Discord\DiscordMessenger;
-use OpenCode\MultichannelLogger\Discord\SendMessageRequest;
-use OpenCode\MultichannelLogger\Exceptions\FailedRequestException;
+use MahmoudHamed\MultichannelLogger\Discord\DiscordConnector;
+use MahmoudHamed\MultichannelLogger\Discord\DiscordMessageData;
+use MahmoudHamed\MultichannelLogger\Discord\DiscordMessenger;
+use MahmoudHamed\MultichannelLogger\Discord\SendMessageRequest;
+use MahmoudHamed\MultichannelLogger\Exceptions\FailedRequestException;
 use Saloon\Http\Faking\MockResponse;
 use Saloon\Laravel\Facades\Saloon;
 

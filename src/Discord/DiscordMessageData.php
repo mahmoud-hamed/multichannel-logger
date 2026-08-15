@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Discord;
+namespace MahmoudHamed\MultichannelLogger\Discord;
 
 use Illuminate\Support\Collection;
-use OpenCode\MultichannelLogger\Contracts\WebhookMessage;
+use MahmoudHamed\MultichannelLogger\Contracts\WebhookMessage;
 use Spatie\LaravelData\Data;
 
 final class DiscordMessageData extends Data implements WebhookMessage

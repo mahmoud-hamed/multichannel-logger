@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Logging;
+namespace MahmoudHamed\MultichannelLogger\Logging;
 
 use Monolog\Level;
 use Monolog\Logger;

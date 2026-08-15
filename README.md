@@ -63,7 +63,7 @@ Register a channel in `config/logging.php`:
 'channels' => [
     'slack' => [
         'driver' => 'custom',
-        'via' => \OpenCode\MultichannelLogger\Slack\CreateSlackLogger::class,
+        'via' => \MahmoudHamed\MultichannelLogger\Slack\CreateSlackLogger::class,
         'webhook_url' => env('SLACK_WEBHOOK_URL'),
         'level' => 'debug',
         'username' => 'Laravel',              // optional
@@ -76,7 +76,7 @@ Register a channel in `config/logging.php`:
 
     'discord' => [
         'driver' => 'custom',
-        'via' => \OpenCode\MultichannelLogger\Discord\CreateDiscordLogger::class,
+        'via' => \MahmoudHamed\MultichannelLogger\Discord\CreateDiscordLogger::class,
         'webhook_url' => env('DISCORD_WEBHOOK_URL'),
         'level' => 'debug',
         'username' => 'Laravel',              // optional
@@ -85,7 +85,7 @@ Register a channel in `config/logging.php`:
 
     'zoom' => [
         'driver' => 'custom',
-        'via' => \OpenCode\MultichannelLogger\Zoom\CreateZoomLogger::class,
+        'via' => \MahmoudHamed\MultichannelLogger\Zoom\CreateZoomLogger::class,
         'webhook_url' => env('ZOOM_WEBHOOK_URL'),
         'to' => 'chat@company.com',           // required, the chat target
         'level' => 'debug',
@@ -101,7 +101,7 @@ Log::channel('discord')->critical('Database down', ['exception' => $e]);
 Log::channel('zoom')->info('Deploy finished');
 ```
 
-By default a channel never throws — webhook failures are caught and ignored so they can't take your application down. Set `ignore_exceptions => false` on the channel config to let `OpenCode\MultichannelLogger\Exceptions\MultichannelLoggerException` bubble up.
+By default a channel never throws — webhook failures are caught and ignored so they can't take your application down. Set `ignore_exceptions => false` on the channel config to let `MahmoudHamed\MultichannelLogger\Exceptions\MultichannelLoggerException` bubble up.
 
 ### Notification channels
 
@@ -109,12 +109,12 @@ Add a `toSlack()`, `toDiscord()` or `toZoom()` method to your notification and r
 
 ```php
 use Illuminate\Notifications\Notification;
-use OpenCode\MultichannelLogger\Discord\DiscordMessageData;
-use OpenCode\MultichannelLogger\Discord\DiscordWebhookChannel;
-use OpenCode\MultichannelLogger\Slack\SlackMessageData;
-use OpenCode\MultichannelLogger\Slack\SlackWebhookChannel;
-use OpenCode\MultichannelLogger\Zoom\ZoomMessageData;
-use OpenCode\MultichannelLogger\Zoom\ZoomWebhookChannel;
+use MahmoudHamed\MultichannelLogger\Discord\DiscordMessageData;
+use MahmoudHamed\MultichannelLogger\Discord\DiscordWebhookChannel;
+use MahmoudHamed\MultichannelLogger\Slack\SlackMessageData;
+use MahmoudHamed\MultichannelLogger\Slack\SlackWebhookChannel;
+use MahmoudHamed\MultichannelLogger\Zoom\ZoomMessageData;
+use MahmoudHamed\MultichannelLogger\Zoom\ZoomWebhookChannel;
 
 class DeployFailed extends Notification
 {
@@ -166,8 +166,8 @@ The method can be `routeNotificationForSlack`, `routeNotificationFor('slack', $n
 Send raw messages from anywhere using the facade (falls back to the configured default webhook):
 
 ```php
-use OpenCode\MultichannelLogger\Facades\MultichannelLogger;
-use OpenCode\MultichannelLogger\Slack\SlackMessageData;
+use MahmoudHamed\MultichannelLogger\Facades\MultichannelLogger;
+use MahmoudHamed\MultichannelLogger\Slack\SlackMessageData;
 
 MultichannelLogger::slack()->send(new SlackMessageData(text: 'Hello world'));
 
@@ -181,17 +181,17 @@ Every integration is composed of four small pieces, all behind contracts:
 
 | Concern          | Contract                                                         | Slack default           |
 |------------------|------------------------------------------------------------------|-------------------------|
-| Message payload  | `OpenCode\MultichannelLogger\Contracts\WebhookMessage`           | `Slack\SlackMessageData` |
-| HTTP transport   | `OpenCode\MultichannelLogger\Contracts\WebhookMessenger`         | `Slack\SlackMessenger`   |
-| Log formatting   | `OpenCode\MultichannelLogger\Contracts\LogMessageFormatter`      | `Slack\SlackFormatter`   |
-| Log channel      | `OpenCode\MultichannelLogger\Logging\WebhookLoggerFactory`       | `Slack\CreateSlackLogger` |
+| Message payload  | `MahmoudHamed\MultichannelLogger\Contracts\WebhookMessage`           | `Slack\SlackMessageData` |
+| HTTP transport   | `MahmoudHamed\MultichannelLogger\Contracts\WebhookMessenger`         | `Slack\SlackMessenger`   |
+| Log formatting   | `MahmoudHamed\MultichannelLogger\Contracts\LogMessageFormatter`      | `Slack\SlackFormatter`   |
+| Log channel      | `MahmoudHamed\MultichannelLogger\Logging\WebhookLoggerFactory`       | `Slack\CreateSlackLogger` |
 
 For example, a custom Slack formatter:
 
 ```php
 use Monolog\LogRecord;
-use OpenCode\MultichannelLogger\Contracts\LogMessageFormatter;
-use OpenCode\MultichannelLogger\Slack\SlackMessageData;
+use MahmoudHamed\MultichannelLogger\Contracts\LogMessageFormatter;
+use MahmoudHamed\MultichannelLogger\Slack\SlackMessageData;
 
 class MySlackFormatter implements LogMessageFormatter
 {
@@ -209,11 +209,11 @@ Register it by building the channel manually:
     'slack' => [
         'driver' => 'custom',
         'via' => function (array $config) {
-            $messenger = new \OpenCode\MultichannelLogger\Slack\SlackMessenger(
+            $messenger = new \MahmoudHamed\MultichannelLogger\Slack\SlackMessenger(
                 webhookUrl: $config['webhook_url'],
             );
 
-            $handler = new \OpenCode\MultichannelLogger\Logging\WebhookLogHandler(
+            $handler = new \MahmoudHamed\MultichannelLogger\Logging\WebhookLogHandler(
                 messenger: $messenger,
                 messageFormatter: new MySlackFormatter(),
             );

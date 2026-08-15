@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Zoom;
+namespace MahmoudHamed\MultichannelLogger\Zoom;
 
 use Illuminate\Support\Str;
-use OpenCode\MultichannelLogger\Contracts\WebhookMessage;
+use MahmoudHamed\MultichannelLogger\Contracts\WebhookMessage;
 use Spatie\LaravelData\Data;
 
 final class ZoomMessageData extends Data implements WebhookMessage

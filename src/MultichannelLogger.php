@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger;
+namespace MahmoudHamed\MultichannelLogger;
 
 use Illuminate\Contracts\Config\Repository;
-use OpenCode\MultichannelLogger\Discord\DiscordMessenger;
-use OpenCode\MultichannelLogger\Slack\SlackMessenger;
-use OpenCode\MultichannelLogger\Zoom\ZoomMessenger;
+use MahmoudHamed\MultichannelLogger\Discord\DiscordMessenger;
+use MahmoudHamed\MultichannelLogger\Slack\SlackMessenger;
+use MahmoudHamed\MultichannelLogger\Zoom\ZoomMessenger;
 
 final class MultichannelLogger
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OpenCode\MultichannelLogger\Contracts;
+namespace MahmoudHamed\MultichannelLogger\Contracts;
 
 interface WebhookMessenger
 {

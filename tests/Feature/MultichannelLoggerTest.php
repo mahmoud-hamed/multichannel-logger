@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-use OpenCode\MultichannelLogger\Discord\DiscordConnector;
-use OpenCode\MultichannelLogger\Discord\DiscordMessageData;
-use OpenCode\MultichannelLogger\Facades\MultichannelLogger;
-use OpenCode\MultichannelLogger\MultichannelLogger as MultichannelLoggerService;
-use OpenCode\MultichannelLogger\Slack\SendMessageRequest;
-use OpenCode\MultichannelLogger\Slack\SlackConnector;
-use OpenCode\MultichannelLogger\Slack\SlackMessageData;
-use OpenCode\MultichannelLogger\Zoom\ZoomConnector;
-use OpenCode\MultichannelLogger\Zoom\ZoomMessageData;
+use MahmoudHamed\MultichannelLogger\Discord\DiscordConnector;
+use MahmoudHamed\MultichannelLogger\Discord\DiscordMessageData;
+use MahmoudHamed\MultichannelLogger\Facades\MultichannelLogger;
+use MahmoudHamed\MultichannelLogger\MultichannelLogger as MultichannelLoggerService;
+use MahmoudHamed\MultichannelLogger\Slack\SendMessageRequest;
+use MahmoudHamed\MultichannelLogger\Slack\SlackConnector;
+use MahmoudHamed\MultichannelLogger\Slack\SlackMessageData;
+use MahmoudHamed\MultichannelLogger\Zoom\ZoomConnector;
+use MahmoudHamed\MultichannelLogger\Zoom\ZoomMessageData;
 use Saloon\Http\Faking\MockResponse;
 use Saloon\Laravel\Facades\Saloon;
 
