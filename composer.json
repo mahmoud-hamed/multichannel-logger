@@ -1,0 +1,75 @@
+{
+    "name": "mahmoud-hamed/multichannel-logger",
+    "description": "Send logs and notifications to Slack, Discord and Zoom webhooks from Laravel 11+.",
+    "keywords": [
+        "laravel",
+        "slack",
+        "discord",
+        "zoom",
+        "webhook",
+        "logging",
+        "notifications",
+        "monolog",
+        "saloon"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": "^8.2",
+        "illuminate/contracts": "^11.0|^12.0",
+        "illuminate/log": "^11.0|^12.0",
+        "illuminate/notifications": "^11.0|^12.0",
+        "illuminate/support": "^11.0|^12.0",
+        "monolog/monolog": "^3.0",
+        "saloonphp/laravel-plugin": "^3.0",
+        "saloonphp/saloon": "^3.0",
+        "spatie/laravel-data": "^4.0"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.0",
+        "orchestra/testbench": "^9.0|^10.0",
+        "pestphp/pest": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.0",
+        "phpstan/phpstan": "^2.0",
+        "phpstan/phpstan-strict-rules": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpenCode\\MultichannelLogger\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OpenCode\\MultichannelLogger\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OpenCode\\MultichannelLogger\\MultichannelLoggerServiceProvider"
+            ],
+            "aliases": {
+                "MultichannelLogger": "OpenCode\\MultichannelLogger\\Facades\\MultichannelLogger"
+            }
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        },
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "analyse": "vendor/bin/phpstan analyse",
+        "format": "vendor/bin/pint",
+        "quality": [
+            "@analyse",
+            "@test"
+        ]
+    }
+}

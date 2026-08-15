@@ -1,0 +1,25 @@
+<?php
+
+declare(strict_types=1);
+
+use Monolog\Level;
+use Monolog\LogRecord;
+use OpenCode\MultichannelLogger\Zoom\ZoomFormatter;
+use OpenCode\MultichannelLogger\Zoom\ZoomMessageData;
+
+it('formats a log record into a zoom message', function () {
+    $record = new LogRecord(
+        datetime: new DateTimeImmutable('2026-08-15 12:00:00'),
+        channel: 'stack',
+        level: Level::Error,
+        message: 'Backup failed',
+        context: [],
+        extra: [],
+    );
+
+    $message = (new ZoomFormatter(to: 'channel-123'))->format($record);
+
+    expect($message)->toBeInstanceOf(ZoomMessageData::class)
+        ->and($message->to)->toBe('channel-123')
+        ->and($message->message)->toBe('[2026-08-15 12:00:00] stack.ERROR: Backup failed');
+});
